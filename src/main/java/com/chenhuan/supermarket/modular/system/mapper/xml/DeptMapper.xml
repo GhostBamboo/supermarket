@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhuan.supermarket.modular.system.mapper.DeptMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenhuan.supermarket.modular.system.entity.Dept">
+        <id column="DEPT_ID" property="deptId" />
+        <result column="DEPT_PID" property="deptPid" />
+        <result column="DEPT_PIDS" property="deptPids" />
+        <result column="DEPT_NAME" property="deptName" />
+        <result column="DEPT_SHORT" property="deptShort" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DEPT_ID, DEPT_PID, DEPT_PIDS, DEPT_NAME, DEPT_SHORT, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

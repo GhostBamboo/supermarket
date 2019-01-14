@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhuan.supermarket.modular.system.mapper.RoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenhuan.supermarket.modular.system.entity.Role">
+        <id column="ROLE_ID" property="roleId" />
+        <result column="ROLE_SORT" property="roleSort" />
+        <result column="ROLE_NAME" property="roleName" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ROLE_ID, ROLE_SORT, ROLE_NAME, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

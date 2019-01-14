@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhuan.supermarket.modular.product.mapper.ProductMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenhuan.supermarket.modular.product.entity.Product">
+        <id column="PRODUCT_ID" property="productId" />
+        <result column="CATE_ID" property="cateId" />
+        <result column="PRODUCT_CODE" property="productCode" />
+        <result column="PRODUCT_NAME" property="productName" />
+        <result column="PRODUCT_PRICE" property="productPrice" />
+        <result column="PRODUCT_ADDRESS" property="productAddress" />
+        <result column="PRODUCT_BEGINTIME" property="productBegintime" />
+        <result column="PRODUCT_SHELFLIFE" property="productShelflife" />
+        <result column="PRODUCT_MATERIAL" property="productMaterial" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PRODUCT_ID, CATE_ID, PRODUCT_CODE, PRODUCT_NAME, PRODUCT_PRICE, PRODUCT_ADDRESS, PRODUCT_BEGINTIME, PRODUCT_SHELFLIFE, PRODUCT_MATERIAL, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>

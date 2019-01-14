@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhuan.supermarket.modular.product.mapper.ProductProviderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenhuan.supermarket.modular.product.entity.ProductProvider">
+        <id column="PRODUCT_PROVIDER_ID" property="productProviderId" />
+        <result column="PRODUCT_ID" property="productId" />
+        <result column="PROVIDER_ID" property="providerId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PRODUCT_PROVIDER_ID, PRODUCT_ID, PROVIDER_ID
+    </sql>
+
+</mapper>

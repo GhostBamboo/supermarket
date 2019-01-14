@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhuan.supermarket.modular.product.mapper.CategoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chenhuan.supermarket.modular.product.entity.Category">
+        <id column="CATE_ID" property="cateId" />
+        <result column="CATE_CODE" property="cateCode" />
+        <result column="CATE_NAME" property="cateName" />
+        <result column="CATE_SORT" property="cateSort" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CATE_ID, CATE_CODE, CATE_NAME, CATE_SORT, CREATE_TIME, UPDATE_TIME
+    </sql>
+
+</mapper>
