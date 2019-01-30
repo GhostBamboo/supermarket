@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author chenhuan
- * @since 2019-01-14
+ * @since 2019-01-16
  */
 @Service
 public class ProductProviderServiceImpl extends ServiceImpl<ProductProviderMapper, ProductProvider> implements IProductProviderService {

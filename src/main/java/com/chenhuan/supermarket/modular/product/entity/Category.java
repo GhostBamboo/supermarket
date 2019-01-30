@@ -12,7 +12,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author chenhuan
- * @since 2019-01-14
+ * @since 2019-01-16
  */
 @TableName("pro_category")
 public class Category implements Serializable {

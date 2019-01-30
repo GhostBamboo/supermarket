@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author chenhuan
- * @since 2019-01-14
+ * @since 2019-01-16
  */
 public interface ProviderMapper extends BaseMapper<Provider> {
 
