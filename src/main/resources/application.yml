@@ -5,9 +5,9 @@ spring:
   profiles:
     active: @spring.active@
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/supermarket?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://47.110.64.206/supermarket?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
-    password: root
+    password: Mysql@123
 
 #mp配置
 mybatis-plus:
