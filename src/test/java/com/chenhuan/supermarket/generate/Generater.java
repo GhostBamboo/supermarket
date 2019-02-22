@@ -1,8 +1,8 @@
 package com.chenhuan.supermarket.generate;
 
 
-import com.chenhuan.supermarket.core.generator.FastGenerate;
-import com.chenhuan.supermarket.core.generator.GenParams;
+import com.chenhuan.supermarket.config.generator.FastGenerate;
+import com.chenhuan.supermarket.config.generator.GenParams;
 
 /**
  * @Description: 代码生成器实现类

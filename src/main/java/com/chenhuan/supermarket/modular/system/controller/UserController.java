@@ -1,9 +1,15 @@
 package com.chenhuan.supermarket.modular.system.controller;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.chenhuan.supermarket.modular.system.service.IUserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -13,8 +19,14 @@ import org.springframework.stereotype.Controller;
  * @author chenhuan
  * @since 2019-01-14
  */
-@Controller
-@RequestMapping("/system/user")
+@RestController
+@RequestMapping(name = "用户管理接口服务",path = "/system/user")
 public class UserController {
+
+    @Resource
+    private IUserService userService;
+
+
+
 
 }

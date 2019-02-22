@@ -13,4 +13,15 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    /**
+     * 登录校验
+     */
+    boolean login(String account, String password);
+
+    /**
+     * 账号唯一性校验
+     */
+    boolean validateAccount(String account);
+
+
 }
