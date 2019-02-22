@@ -24,6 +24,7 @@
         <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
         <mybatis-plus.version>3.0.4</mybatis-plus.version>
         <beetl.version>2.9.3</beetl.version>
+        <fastjson.version>1.2.54</fastjson.version>
     </properties>
 
     <dependencies>
@@ -83,6 +84,14 @@
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
 
     </dependencies>
 

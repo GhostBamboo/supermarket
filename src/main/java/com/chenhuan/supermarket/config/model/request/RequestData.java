@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.core.model;
+package com.chenhuan.supermarket.config.model.request;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
