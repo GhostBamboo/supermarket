@@ -23,9 +23,6 @@ import javax.annotation.Resource;
 @RequestMapping(name = "用户管理接口服务",path = "/system/user")
 public class UserController {
 
-    @Resource
-    private IUserService userService;
-
 
 
 

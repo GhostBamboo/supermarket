@@ -1,7 +1,6 @@
 package com.chenhuan.supermarket.modular.system.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.chenhuan.supermarket.config.exception.ServiceException;
 import com.chenhuan.supermarket.core.exceptionEnum.FieldNullException;
@@ -9,8 +8,11 @@ import com.chenhuan.supermarket.modular.system.entity.User;
 import com.chenhuan.supermarket.modular.system.mapper.UserMapper;
 import com.chenhuan.supermarket.modular.system.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -23,6 +25,7 @@ import java.util.List;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+
 
     @Override
     public boolean login(String account, String password) {

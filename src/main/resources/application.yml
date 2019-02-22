@@ -11,7 +11,7 @@ spring:
 
 #mp配置
 mybatis-plus:
-  type-aliases-package: com.chenhuan.supermarket
+  type-aliases-package: com.chenhuan.supermarket.modular
 
 
 
