@@ -25,11 +25,9 @@ public class AuthController {
     private IUserService userService;
 
     @RequestMapping(name = "登录", path = "login")
-    public ModelAndView login(String account, String password) {
-        ModelAndView modelAndView = new ModelAndView("index.html");
+    public ResponseData login(String account, String password) {
         boolean b = this.userService.login(account, password);
-        modelAndView.addObject(b);
-        return modelAndView;
+        return ResponseData.success(b);
     }
 
     @RequestMapping(name = "账号唯一性校验", path = "validate")
