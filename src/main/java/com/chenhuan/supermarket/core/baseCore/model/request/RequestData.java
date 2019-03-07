@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.config.model.request;
+package com.chenhuan.supermarket.core.baseCore.model.request;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -95,4 +95,12 @@ public class RequestData implements Serializable {
         return this.data.toJavaObject(Map.class);
     }
 
+    @Override
+    public String toString() {
+        return "RequestData{" +
+                "data=" + data +
+                ", ip='" + ip + '\'' +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }

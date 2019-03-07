@@ -1,14 +1,10 @@
 package com.chenhuan.supermarket.modular.system.controller;
 
-import com.chenhuan.supermarket.config.model.request.RequestData;
-import com.chenhuan.supermarket.config.model.response.ResponseData;
-import com.chenhuan.supermarket.modular.system.entity.User;
+import com.chenhuan.supermarket.core.baseCore.model.request.RequestData;
+import com.chenhuan.supermarket.core.baseCore.model.response.ResponseData;
 import com.chenhuan.supermarket.modular.system.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 

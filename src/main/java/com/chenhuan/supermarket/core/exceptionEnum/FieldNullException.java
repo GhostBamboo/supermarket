@@ -1,6 +1,6 @@
 package com.chenhuan.supermarket.core.exceptionEnum;
 
-import com.chenhuan.supermarket.config.exception.ServiceException;
+import com.chenhuan.supermarket.core.baseCore.exception.ServiceException;
 
 /**
  * @Description: 通用的返回参数null异常类

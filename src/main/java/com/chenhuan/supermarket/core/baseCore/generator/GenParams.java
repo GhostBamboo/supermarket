@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.config.generator;
+package com.chenhuan.supermarket.core.baseCore.generator;
 
 import lombok.Data;
 

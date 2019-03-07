@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.config.model.response;
+package com.chenhuan.supermarket.core.baseCore.model.response;
 
 /**
  * @Description: 返回失败实体类

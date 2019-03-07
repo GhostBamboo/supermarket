@@ -3,7 +3,7 @@ package com.chenhuan.supermarket.modular.system.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.chenhuan.supermarket.config.exception.ServiceException;
+import com.chenhuan.supermarket.core.baseCore.exception.ServiceException;
 import com.chenhuan.supermarket.core.exceptionEnum.FieldNullException;
 import com.chenhuan.supermarket.modular.system.entity.Role;
 import com.chenhuan.supermarket.modular.system.mapper.RoleMapper;
@@ -12,7 +12,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -39,8 +38,8 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IR
         if (StringUtils.isEmpty(roleId)) {
             throw new FieldNullException("roleId");
         }
-
-        return this.baseMapper.selectById(roleId);
+        Role role = this.baseMapper.selectById(roleId);
+        return role;
     }
 
     @Override

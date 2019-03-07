@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.config.generator;
+package com.chenhuan.supermarket.core.baseCore.generator;
 
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;

@@ -1,4 +1,4 @@
-package com.chenhuan.supermarket.config.exception;
+package com.chenhuan.supermarket.core.baseCore.exception;
 
 /**
  * @Description: 自定义异常
